@@ -23,9 +23,9 @@ import sys
 def main():
   # Get the name from the command line, using 'World' as a fallback.
   if len(sys.argv) >= 2:
-    name = sys.argv[1]
+    name = len(sys.argv[1])
   else:
-    name = 'World'
+    name = len('World')
   print 'Hello', name
 
 # This is the standard boilerplate that calls the main() function.

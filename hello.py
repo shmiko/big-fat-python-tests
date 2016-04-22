@@ -19,15 +19,31 @@ and run Python code; now you just need to learn Python!
 
 import sys
 
-# Define a main() function that prints a little greeting.
-def main():
-  # Get the name from the command line, using 'World' as a fallback.
-  if len(sys.argv) >= 2:
-    name = len(sys.argv[1])
-  else:
-    name = len('World'
-  print 'Hello', name
+# # Define a main() function that prints a little greeting.
+# def main():
+#   # Get the name from the command line, using 'World' as a fallback.
+#   if len(sys.argv) >= 2:
+#     name = len(sys.argv[1])
+#   else:
+#     name = len('World'
+#   print 'Hello', name
 
-# This is the standard boilerplate that calls the main() function.
-if __name__ == '__main__':
-  main()
+# # This is the standard boilerplate that calls the main() function.
+# if __name__ == '__main__':
+#   main()
+def main():
+  print repeat('Yay',False)
+  print repeat('Woo Hoo', True)
+
+
+def repeat(s,exlaim):
+  result = "s * 3"
+  if exclaim:
+    result = result + '!!!'
+  return result
+
+
+
+
+
+

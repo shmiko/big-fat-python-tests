@@ -61,5 +61,8 @@ sys.exit(0)
 #sys - access to exit(),argv,stdin,stdout
 #re - regex
 #os - os interface, file system
+p1 = 3.14
+## the vlue is pi
+text = 'the value io pie is' + p1
 
 

@@ -65,4 +65,21 @@ p1 = 3.14
 ## the vlue is pi
 text = 'the value io pie is' + p1
 
+# s.lower(),s.uper()
+# s.strip() - removes whitespace
+# s.isalpha()/s.isdidgit(),s.isspace() - test is string chars are in character class
+# s.startswith('other'),s.endwith('other') - test for start or end of string
+# s.find('other') - searches for 'other' within s, returns 1st index if found otherwise -1
+# s.replace('old','new') - resturns replacedment string
+# s.split('delim') - returns substrings split by delim - no args splits on whitespace
+# s.join(list) - opposite of split ( array ) joins elements
+# slice.s[start:end] - refer to sub parts of sequences 0 strings and lists
+#    H E L L O 
+#    0 1 2 3 4
+#   -5-4-3-2-1
+
+
+
+
+
 

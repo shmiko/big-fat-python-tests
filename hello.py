@@ -49,6 +49,11 @@ def main():
     else:
         print repeat(name)
 
+s = 'hi'
+print s[1]
+print len(s)
+print s + ' more'
+
 import sys
 
 sys.exit(0)

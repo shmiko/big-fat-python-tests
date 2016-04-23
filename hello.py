@@ -49,5 +49,12 @@ def main():
     else:
         print repeat(name)
 
+import sys
+
+sys.exit(0)
+
+#sys - access to exit(),argv,stdin,stdout
+#re - regex
+#os - os interface, file system
 
 

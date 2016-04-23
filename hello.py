@@ -54,16 +54,16 @@ print s[1]
 print len(s)
 print s + ' more'
 
-import sys
+# import sys
 
-sys.exit(0)
+# sys.exit(0)
 
 #sys - access to exit(),argv,stdin,stdout
 #re - regex
 #os - os interface, file system
 p1 = 3.14
 ## the vlue is pi
-text = 'the value io pie is' + p1
+text = 'the value io pie is' + str(p1)
 
 # s.lower(),s.uper()
 # s.strip() - removes whitespace
@@ -77,9 +77,12 @@ text = 'the value io pie is' + p1
 #    H E L L O 
 #    0 1 2 3 4
 #   -5-4-3-2-1
-
-
-
+# % operator
+text = "%d little pigs come out or I'll %s and %s and %s" % (3, 'huff', 'puff', 'blow down')
+ # add parens to make the long-line work:
+text = ("%d little pigs come out or I'll %s and %s and i'll %s your house %s" %
+    (3, 'huff', 'puff', 'blow', 'down'))
+print text
 
 
 

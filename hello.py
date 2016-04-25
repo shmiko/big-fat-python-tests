@@ -65,6 +65,12 @@ p1 = 3.14
 ## the vlue is pi
 text = 'the value io pie is' + str(p1)
 
+raw = r'this\t\n and that'
+print raw     ## this\t\n and that
+    
+multi = """It was the best of times.
+It was the worst of times."""
+print multi
 # s.lower(),s.uper()
 # s.strip() - removes whitespace
 # s.isalpha()/s.isdidgit(),s.isspace() - test is string chars are in character class
@@ -79,6 +85,7 @@ text = 'the value io pie is' + str(p1)
 #   -5-4-3-2-1
 # % operator
 text = "%d little pigs come out or I'll %s and %s and %s" % (3, 'huff', 'puff', 'blow down')
+print text
  # add parens to make the long-line work:
 text = ("%d little pigs come out or I'll %s and %s and i'll %s your house %s" %
     (3, 'huff', 'puff', 'blow', 'down'))

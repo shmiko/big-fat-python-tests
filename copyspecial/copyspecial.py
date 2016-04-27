@@ -17,7 +17,7 @@ import commands
 
 # +++your code here+++
 # Write functions and modify main() to call them
-
+print os
 
 
 def main():

@@ -25,7 +25,7 @@ def read_urls(filename):
   Screens out duplicate urls and returns the urls sorted into
   increasing order."""
   # +++your code here+++
-  # wtf
+  
   
 
 def download_images(img_urls, dest_dir):

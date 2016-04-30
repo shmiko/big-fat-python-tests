@@ -49,7 +49,7 @@ I=[]
 for row in desired_table.find_all("tr"):
   col = row.find_all("td")
   #extract table body not header
-  # if len(cells)==8:
+  if len(cells)==8:
   #use find(text=True) to access element
 
 

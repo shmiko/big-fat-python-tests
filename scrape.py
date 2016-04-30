@@ -19,34 +19,35 @@ and run Python code; now you just need to learn Python!
 
 import sys
 from bs4 import BeautifulSoup
+from bs4 import SoupStrainer
 import urllib2
 
-# redditFile = urllib2.urlopen("http://www.reddit.com")
-# redditHtml = redditFile.read()
-# redditFile.close()
+only_a_tags = SoupStrainer("a")
 
-# soup = BeautifulSoup(redditHtml)
+soup = BeautifulSoup(open("index.html", parse_only=only_a_tags))
+
+# soup = BeautifulSoup("<title>data</title>")
 # redditAll = soup.find_all("a")
 # for links in soup.find_all('a'):
 #     print (links.get('href'))
 
-url = "http://www.pythonforbeginners.com"
+# url = "http://www.pythonforbeginners.com"
 
-content = urllib2.urlopen(url).read()
+# content = urllib2.urlopen(url).read()
 
-soup = BeautifulSoup(content)
+# soup = BeautifulSoup(content)
 
-print soup.prettify()
+print(soup.prettify())
 
-print title
->> 'title'? Python For Beginners
+print soup.title
+# # >> 'title'? Python For Beginners
 
-print soup.title.string
->> ? Python For Beginners
+# print soup.title.string
+# # >> ? Python For Beginners
 
-print soup.p
+# print soup.p
  
 
 
-print soup.a
-Python For Beginners
+# print soup.a
+# # Python For Beginners

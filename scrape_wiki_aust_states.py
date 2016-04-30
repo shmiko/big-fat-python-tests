@@ -53,15 +53,15 @@ for row in desired_table.find_all("tr"):
   #use find(text=True) to access element
 
 
-  # A.append(col[0].find(text=True))
-  # B.append(col[1].find(text=True))
-  # C.append(col[2].find(text=True))
-  # D.append(col[3].find(text=True))
-  # E.append(col[4].find(text=True))
-  # F.append(col[5].find(text=True))
-  # G.append(col[6].find(text=True))
-  # H.append(col[7].find(text=True))
-  # I.append(col[8].find(text=True))
+  A.append(col[0].find(text=True))
+  B.append(col[1].find(text=True))
+  C.append(col[2].find(text=True))
+  D.append(col[3].find(text=True))
+  E.append(col[4].find(text=True))
+  F.append(col[5].find(text=True))
+  G.append(col[6].find(text=True))
+  H.append(col[7].find(text=True))
+  I.append(col[8].find(text=True))
 
 
 #import pandas to convert list to data frame

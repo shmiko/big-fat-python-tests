@@ -51,7 +51,7 @@ for row in desired_table.find_all("tr"):
   #extract table body not header
   # if len(cells)==8:
   #use find(text=True) to access element
-  print
+  
 
   A.append(col[0].find(text=True))
   B.append(col[1].find(text=True))

@@ -25,9 +25,13 @@ class AppCrawler:
     name = tree.xpath('//h1[@itemprop="name"]/text()')[0]
     developer = tree.xpath('//div[@class="left"]/h2/text()')[0]
     price = tree.xpath('//div[@itemprop="price"]/text()')[0]
-    print name + " " + developer + " " + price
+    links = tree.xpath('//div[@class="center-stack"]//*/a[@class="name"]/@href')
+    # for link in links:
+    #   print name + " " + developer + " " + price + " " + link
     # print start_page.text
-    return
+    app = App(name,developer,price,links)
+    self.apps.append(app)
+    # return
 
 
 class App:

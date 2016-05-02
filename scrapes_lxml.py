@@ -13,11 +13,24 @@ class AppCrawler:
   def __init__(self,starting_url,depth):
     self.starting_url = starting_url
     self.depth = depth
+    self.current_depth = 0
+    self.depth_links = []
     self.apps = []
 
   def crawl(self):
-    self.get_app_from_link(self.starting_url)
-    return
+    app = self.get_app_from_link(self.starting_url)
+    self.apps.append(app)
+    self.depth_links.append(app.links)
+    while self.current_depth < self.depth:
+      current_links = []
+      for link in self.depth_links[self.current_depth]:
+        current_app = self.get_app_from_link(link)
+        current_links.extend(current_app.links)
+        self.apps.append(current_app)
+      self.current_depth += 1
+      self.depth_links.append(current_links)
+
+    # return
 
   def get_app_from_link(self,link):
     start_page = requests.get(link)
@@ -30,8 +43,8 @@ class AppCrawler:
     #   print name + " " + developer + " " + price + " " + link
     # print start_page.text
     app = App(name,developer,price,links)
-    self.apps.append(app)
-    # return
+    # self.apps.append(app)
+    return app
 
 
 class App:
@@ -48,7 +61,7 @@ class App:
       + "\r\n")
 
 
-crawler = AppCrawler('https://itunes.apple.com/us/app/candy-crush-sage/id553834731',0)
+crawler = AppCrawler('https://itunes.apple.com/us/app/candy-crush-sage/id553834731',1)
 crawler.crawl()
 
 for app in crawler.apps:

@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from bs4 import SoupStrainer
 from lxml import html
 import requests
+import time
 #import the library used to query a website
 import urllib2
 
@@ -27,6 +28,7 @@ class AppCrawler:
         current_app = self.get_app_from_link(link)
         current_links.extend(current_app.links)
         self.apps.append(current_app)
+        time.sleep(5)
       self.current_depth += 1
       self.depth_links.append(current_links)
 
@@ -61,7 +63,7 @@ class App:
       + "\r\n")
 
 
-crawler = AppCrawler('https://itunes.apple.com/us/app/candy-crush-sage/id553834731',1)
+crawler = AppCrawler('https://itunes.apple.com/us/app/candy-crush-sage/id553834731',2)
 crawler.crawl()
 
 for app in crawler.apps:

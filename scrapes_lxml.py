@@ -21,7 +21,11 @@ class AppCrawler:
 
   def get_app_from_link(self,link):
     start_page = requests.get(link)
-    
+    tree = html.fromstring(start_page.text)
+    name = tree.xpath('//h1[@itemprop="name"]/text()')[0]
+    developer = tree.xpath('//div[@class="left"]/h2/text()')[0]
+    price = tree.xpath('//div[@itemprop="price"]/text()')[0]
+    print name + " " + developer + " " + price
     # print start_page.text
     return
 

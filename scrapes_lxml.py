@@ -32,7 +32,6 @@ class AppCrawler:
       self.current_depth += 1
       self.depth_links.append(current_links)
 
-    # return
 
   def get_app_from_link(self,link):
     start_page = requests.get(link)

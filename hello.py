@@ -26,7 +26,7 @@ import sys
 #     name = len(sys.argv[1])
 #   else:
 #     name = len('World'
-#   print 'Hello', name
+  print 'Hello', name
 
 # # This is the standard boilerplate that calls the main() function.
 # if __name__ == '__main__':

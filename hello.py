@@ -20,7 +20,7 @@ and run Python code; now you just need to learn Python!
 import sys
 
 # # Define a main() function that prints a little greeting.
-# def main():
+def main():
 #   # Get the name from the command line, using 'World' as a fallback.
 #   if len(sys.argv) >= 2:
 #     name = len(sys.argv[1])

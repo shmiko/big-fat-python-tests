@@ -30,7 +30,7 @@ import sys
 
 # # This is the standard boilerplate that calls the main() function.
 # if __name__ == '__main__':
-  main()
+#   main()
 def main():
   print repeat('Yay',False)
   print repeat('Woo Hoo', True)

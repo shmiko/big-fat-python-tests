@@ -57,7 +57,7 @@ print s + ' more'
 # import sys
 
 # sys.exit(0)
-#fix
+#
 
 #sys - access to exit(),argv,stdin,stdout
 #re - regex

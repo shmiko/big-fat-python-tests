@@ -56,7 +56,7 @@ print s + ' more'
 
 # import sys
 
-# sys.exit(0)
+sys.exit(0)
 #
 
 #sys - access to exit(),argv,stdin,stdout

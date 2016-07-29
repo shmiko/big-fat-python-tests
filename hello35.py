@@ -29,9 +29,11 @@ def main():
   print ('Gday', name)
 
 # # This is the standard boilerplate that calls the main() function.
-# if __name__ == '__main__':
-#   main()
-def main():
+if __name__ == '__main__':
+  main()
+
+
+def maina():
   print (repeat('Yay',False))
   print (repeat('Woo Hoo', True))
 
@@ -43,7 +45,7 @@ def repeat(s,exlaim):
   return result
 
 #ll
-def main():
+def main2():
     if name == 'Guido':
         print (repeeeet(name) + '!!!')
     else:

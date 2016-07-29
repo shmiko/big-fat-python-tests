@@ -33,7 +33,7 @@ if __name__ == '__main__':
   main()
 
 
-def maina():
+def main():
   print (repeat('Yay',False))
   print (repeat('Woo Hoo', True))
 
@@ -45,7 +45,7 @@ def repeat(s,exlaim):
   return result
 
 #ll
-def main2():
+def main():
     if name == 'Guido':
         print (repeeeet(name) + '!!!')
     else:

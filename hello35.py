@@ -26,14 +26,14 @@ def main():
 #     name = len(sys.argv[1])
 #   else:
 #     name = len('World'
-  print 'Hello', name
+  print ('Gday', name)
 
 # # This is the standard boilerplate that calls the main() function.
 # if __name__ == '__main__':
 #   main()
 def main():
-  print repeat('Yay',False)
-  print repeat('Woo Hoo', True)
+  print (repeat('Yay',False))
+  print (repeat('Woo Hoo', True))
 
 
 def repeat(s,exlaim):
@@ -45,14 +45,14 @@ def repeat(s,exlaim):
 #ll
 def main():
     if name == 'Guido':
-        print repeeeet(name) + '!!!'
+        print (repeeeet(name) + '!!!')
     else:
-        print repeat(name)
+        print (repeat(name))
 
 s = 'hi'
-print s[1]
-print len(s)
-print s + ' more'
+print (s[1])
+print (len(s))
+print (s + ' more')
 
 # import sys
 
@@ -67,11 +67,11 @@ p1 = 3.14
 text = 'the value io pie is' + str(p1)
 
 raw = r'this\t\n and that'
-print raw     ## this\t\n and that
+print (raw)     ## this\t\n and that
 
 multi = """It was the best of times.
 It was the worst of times."""
-print multi
+print (multi)
 # s.lower(),s.uper()
 # s.strip() - removes whitespace
 # s.isalpha()/s.isdidgit(),s.isspace() - test is string chars are in character class
@@ -86,8 +86,8 @@ print multi
 #   -5-4-3-2-1
 # % operator
 text = "%d little pigs come out or I'll %s and %s and %s" % (3, 'huff', 'puff', 'blow down')
-print text
+print (text)
  # add parens to make the long-line work:
 text = ("%d little pigs come out or I'll %s and %s and i'll %s your house %s" %
     (3, 'huff', 'puff', 'blow', 'down'))
-print text
+print (text)

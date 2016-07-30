@@ -50,6 +50,6 @@ db.restaurants.insert(
    }
 )
 
-
+#ok
 > db.schedule.find({bookings : {$elemMatch : { date : ISODate("2016-08-09T10:00:00.000Z")}}})
 { "_id" : ObjectId("579c1ab660b6ed03ea5bf1e4"), "bookings" : [ { "event" : "MongoDB On Site Interveiw", "date" : ISODate("2016-08-09T10:00:00Z+10") } ] }

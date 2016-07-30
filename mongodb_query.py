@@ -1,4 +1,4 @@
-db.schedule.find("bookings" : 
+db.schedule.find("bookings" :
    {"$elemMatch" : { "date" : new ISODate("2016-08-09T10:00:00.000Z")}}
    )
 >> { "bookings" : [
@@ -8,7 +8,7 @@ db.schedule.find("bookings" :
 			}
 		]
 	}
-	
+
 	db.schedule.insert(
       { "bookings" : [
    			{
@@ -21,6 +21,9 @@ db.schedule.find("bookings" :
 
 db.schedule.find()
 { "_id" : ObjectId("579af1b356bf8dd7f454ae3e"), "bookings" : [ { "event" : "MongoDB On Site Interveiw", "date" : ISODate("2016-08-09T10:00:00Z") } ] }
+   
+   
+   #retry
 
 db.restaurants.insert(
    {
@@ -49,6 +52,6 @@ db.restaurants.insert(
    }
 )
 
-
+#ok
 > db.schedule.find({bookings : {$elemMatch : { date : ISODate("2016-08-09T10:00:00.000Z")}}})
 { "_id" : ObjectId("579c1ab660b6ed03ea5bf1e4"), "bookings" : [ { "event" : "MongoDB On Site Interveiw", "date" : ISODate("2016-08-09T10:00:00Z+10") } ] }

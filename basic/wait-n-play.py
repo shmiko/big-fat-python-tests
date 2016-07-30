@@ -12,8 +12,4 @@ while (breaks < total_breaks):
 	time.sleep(10)
 	webbrowser.open(url_direct,new=2)
 	breaks = breaks + 1
-# if delta.seconds >= 2000:
-    # do stuff
-    # webbrowser.open(url_direct,new=2)
-# else:
-    # sleep for a bit
+

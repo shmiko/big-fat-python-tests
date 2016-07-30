@@ -9,18 +9,18 @@ def draw_square():
 	window = turtle.Screen()
 	window.bgcolor("red")
 
-	# paul = turtle.Turtle()
-	# paul.shape("turtle")
-	# paul.color("blue")
-	# paul.speed(7)
-	# for i in range(1,36):
-	# 	draw_shapes(paul,4,100,90)
-	# 	paul.right(10)
-	# paul.right(5)
-	# paul.color("green")
-	# for i in range(1,72):
-	# 	draw_shapes(paul,4,100,90)
-	# 	paul.right(5)
+	paul = turtle.Turtle()
+	paul.shape("turtle")
+	paul.color("blue")
+	paul.speed(7)
+	for i in range(1,36):
+		draw_shapes(paul,4,100,90)
+		paul.right(10)
+	paul.right(5)
+	paul.color("green")
+	for i in range(1,72):
+		draw_shapes(paul,4,100,90)
+		paul.right(5)
 
 	# paul.forward(100)
 	# paul.right(90)

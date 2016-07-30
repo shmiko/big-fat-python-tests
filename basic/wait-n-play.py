@@ -1,7 +1,5 @@
 import webbrowser
 import time
-# import sleep
-
 
 total_breaks = 3
 breaks = 0

@@ -23,9 +23,6 @@ db.schedule.find()
 { "_id" : ObjectId("579af1b356bf8dd7f454ae3e"), "bookings" : [ { "event" : "MongoDB On Site Interveiw", "date" : ISODate("2016-08-09T10:00:00Z") } ] }
 
 
-#test
-
-
 db.restaurants.insert(
    {
       "address" : {

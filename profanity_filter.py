@@ -1,6 +1,6 @@
 import os
 import webbrowser
-url_direct = "https://www.youtube.com/watch?q="
+url_direct = "http://www.wdylike.appspot.com/?q="
 
 def read_text():
 	movies = open("curse_movies.txt")

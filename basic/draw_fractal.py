@@ -4,7 +4,7 @@ def draw_fractal_main():
     window = turtle.Screen()
     window.bgcolor("blue")
 
-    t = init_turtle("arrow", "green", 0)
+    t = init_turtle("arrow", "green", 50)
     length = 256
 
     # init start position

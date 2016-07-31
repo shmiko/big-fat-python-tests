@@ -22,7 +22,7 @@ class Child(Parent):
 paul_richard = Parent("Jones","Green")
 paul_richard.show_info()
 print(paul_richard.last_name)
-# print(paul_richard.__name__)
+print(paul_richard.__name__)
 
 jack_paul = Child("Jones","Brown",56)
 # print(jack_paul.last_name)

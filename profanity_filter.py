@@ -1,5 +1,5 @@
 import os
-import webbrowser
+import urllib
 url_direct = "http://www.wdylike.appspot.com/?q="
 
 def read_text():
@@ -9,7 +9,15 @@ def read_text():
 	print (length_of_file)
 	print (contents_of_file)
 	movies.close()
-	find_curse_words(contents_of_file)
+	# find_curse_words(contents_of_file)
+	check_profanity(contents_of_file)
+
+def check_profanity(text_to_check):
+	connection = urllib.urlopen(url_direct + text_to_check)
+	output = connection.read()
+	print(output)
+	connection.close()
+		
 
 def find_curse_words(text):
 	#split the text into an array
@@ -17,9 +25,19 @@ def find_curse_words(text):
 	count_of_words = 0
 	for word in words:
 		count_of_words = count_of_words + 1
-		if (webbrowser.open(url_direct + word,new=2)) == true:
-			os.rename(word,word.replace("curse!"))
-		print (word)
+		connection = urllib.urlopen(url_direct + word)
+		output = connection.read()
+		print(output)
+		connection.close()
+		# if (urllib.urlopen(url_direct + word).read()):
+		if "true" in output:
+			new_word = word.replace(word,"curse!")
+			print("Profanity Alert!!")
+			print ("old word was ",word," and the new word is ",new_word)
+		elif "false" in output:
+			print("This document has no curse words")
+		else:
+			print("This document cannot be scanned properly")
 	print (count_of_words)
 
 read_text()

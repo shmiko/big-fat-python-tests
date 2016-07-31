@@ -3,18 +3,18 @@ import fresh_tomatoes
 
 toy_story = media.Movie("Toy Story",
 						"A Boy's toys come to life",
-						"https://en.wikipedia.org/wiki/Toy_Story#/media/File:Toy_Story.jpg",
-						"www.youtube.com%2Fwatch%3Fv%3DKYz2wyBy3kc&usg=AFQjCNEJoSlxDJtzDTMi_7zEW-AOc2Z4MA&sig2=GF4roIebdb3G6PZWVXh88A")
+						"https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Toy_Story.jpg/220px-Toy_Story.jpg",
+						"https://www.google.com.au/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwidzrzsj53OAhUFupQKHZNWCiQQyCkIHTAA&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKYz2wyBy3kc&usg=AFQjCNEJoSlxDJtzDTMi_7zEW-AOc2Z4MA&sig2=4icOpliOwvDtq-LfTwcnxg&bvm=bv.128617741,d.dGo")
 
-print(toy_story.storyline)
+# print(toy_story.storyline)
 
 avatar = media.Movie("Avatar",
 						"A marine on an alien planet",
-						"https://en.wikipedia.org/wiki/avatar#/media/File:avatar.jpg",
-						"https://www.youtube.com/watch?v=cRdxXPV9GNQ")
+						"https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Avatar-Teaser-Poster.jpg/220px-Avatar-Teaser-Poster.jpg",
+						"https://www.google.com.au/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjE1Pzej53OAhWJi5QKHRqrBnkQyCkIHzAA&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcRdxXPV9GNQ&usg=AFQjCNHfVhtBllyBLFd0YxZtVNRkrKF6gQ&sig2=qoZJE0keoQLDEWqidMfJ2g")
 
-print(avatar.poster_image_url)
-avatar.show_trailer()
+# print(avatar.poster_image_url)
+# avatar.show_trailer()
 
 suicide_sqad = media.Movie("Suicide Sqaud",
 						"DC Universe superhero filem",
@@ -25,8 +25,6 @@ ghostbusters = media.Movie("Ghostbusters 2016",
 						"ghosts run wild in New York City",
 						"https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Ghostbusters_2016_film_poster.jpg/220px-Ghostbusters_2016_film_poster.jpg",
 						"https://www.google.com.au/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&cad=rja&uact=8&ved=0ahUKEwjixcvVjJ3OAhXGHZQKHZSNA58QtwIIwQEwCA&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dw3ugHP-yZXw&usg=AFQjCNFYJJsOX2JMFDHmgGwmYW2N6m30-w&sig2=_ZWxpHYPUH8u7yvoRM_5YQ&bvm=bv.128617741,d.dGo")
-
-
 
 bfg = media.Movie("BFG",
 						"A big friendly giant, by Roald Dahl",
@@ -40,4 +38,4 @@ independence_day = media.Movie("Independence Day - Resurgence",
 
 movies = [toy_story,avatar,suicide_sqad,ghostbusters,bfg,independence_day]
 
-fresh_tomoatoes.open_movies_page(movies)
+fresh_tomatoes.open_movies_page(movies)

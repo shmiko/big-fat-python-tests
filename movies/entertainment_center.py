@@ -1,4 +1,5 @@
 import media
+import fresh_tomatoes
 
 toy_story = media.Movie("Toy Story",
 						"A Boy's toys come to life",
@@ -36,3 +37,7 @@ independence_day = media.Movie("Independence Day - Resurgence",
 						"SciFi base on same film from 20 years ago, invasion",
 						"https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Independence-Day-2-poster.jpg/220px-Independence-Day-2-poster.jpg",
 						"https://www.google.com.au/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&cad=rja&uact=8&ved=0ahUKEwjZvp71jZ3OAhVFJZQKHeFPBdwQtwIIwwEwBg&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRfJgT89hEME&usg=AFQjCNGPQs4uSAgR6kcbSRaiEj93XL6DLw&sig2=P5llW5sYLmFOmXJ0DIQqgQ&bvm=bv.128617741,d.dGo")
+
+movies = [toy_story,avatar,suicide_sqad,ghostbusters,bfg,independence_day]
+
+fresh_tomoatoes.open_movies_page(movies)

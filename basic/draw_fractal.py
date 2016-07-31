@@ -2,7 +2,7 @@ import turtle
 
 def draw_fractal_main():
     window = turtle.Screen()
-    window.bgcolor("red")
+    window.bgcolor("blue")
 
     t = init_turtle("arrow", "green", 0)
     length = 256
@@ -67,3 +67,4 @@ def draw_triangle(some_turtle, length):
 
 
 draw_fractal_main()
+

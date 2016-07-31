@@ -1,4 +1,4 @@
 def read_text():
-	open("curse_movies.txt")
-
+	movies = open("curse_movies.txt")
+	moview.read()
 read_text()

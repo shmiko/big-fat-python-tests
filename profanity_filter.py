@@ -1,4 +1,5 @@
 import os
+import webbrowser
 url_direct = "https://www.youtube.com/watch?q="
 
 def read_text():

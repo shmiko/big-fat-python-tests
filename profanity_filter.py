@@ -12,13 +12,20 @@ def read_text():
 	# find_curse_words(contents_of_file)
 	check_profanity(contents_of_file)
 
+#check whole file
 def check_profanity(text_to_check):
 	connection = urllib.urlopen(url_direct + text_to_check)
 	output = connection.read()
 	print(output)
 	connection.close()
+	if "true" in output:
+		print("Profanity Alert!!")
+	elif "false" in output:
+		print("This document has no curse words")
+	else:
+		print("This document cannot be scanned properly")
 		
-
+#check each word in file
 def find_curse_words(text):
 	#split the text into an array
 	words = text.split(" ")

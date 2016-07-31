@@ -40,5 +40,9 @@ movies = [toy_story,avatar,suicide_sqad,ghostbusters,bfg,independence_day]
 
 # fresh_tomatoes.open_movies_page(movies)
 
+
+#class variables
 print (media.Movie.VALID_RATINGS)
 print (media.Movie.__doc__)
+print (media.Movie.__name__)
+print (media.Movie.__module__)

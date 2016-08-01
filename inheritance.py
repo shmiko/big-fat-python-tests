@@ -25,6 +25,6 @@ print(paul_richard.last_name)
 print(paul_richard.__name__)
 
 jack_paul = Child("Jones","Brown",56)
-# print(jack_paul.last_name)
+print(jack_paul.last_name)
 print(jack_paul.number_of_toys)
 jack_paul.show_info()

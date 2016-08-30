@@ -1,0 +1,85 @@
+Code	PYTHON_TEST
+Name   "Run a Python Script"
+Type     Standard
+Access   STR
+// -- KEYWORDS END
+
+// -- PRESELECTION
+PreSelection
+	TextFile dPythonScriptDir.SetRowDesc("Dir Location of Python Script)").SaveDialog(False) = "D:\google-python-exercises\big-fat-python-tests\basic\DRAW_SQUARE.PY";
+	
+	
+End
+// -- PRESELECTION END
+
+// -- SELECT
+//'Select DF_CODE.Match.Force;
+// -- SELECT END
+
+String sAction = "";
+String sCommand;
+String sCommand2;
+String sFolderName;
+Number theReportAction;
+Number intNum1.SetNDP(0);
+Boolean bContinue;
+String sUserName = "pjones";
+String sQuoteJob = "Job";
+String sQM_NUMBER = "123456";
+
+Procedure ValidateAction(Number nActionNum)
+	If nActionNum == XAE_PREVIEW then
+	   sAction = "SCREEN";
+	Endif
+	If nActionNum == XAE_REVIEW then
+		sAction = "REVIEW"; 
+	Endif
+	If nActionNum == XAE_PRINT then
+		sAction = "PRINTER"; 
+	Endif
+	If nActionNum == XAE_REPRINT then
+		sAction = "RE-PRINT"; 
+	Endif
+	If nActionNum == XAE_FILE then
+		sAction = "TEXT FILE"; 
+	Endif
+	If nActionNum == XAE_FAX then
+		sAction = "FAX"; 
+	Endif
+	If nActionNum == XAE_RTF then
+		sAction = "RICH TEXT FILE"; 
+	Endif
+	If nActionNum == XAE_HTML_4 then
+		sAction = "HTML 4.0 FILE"; 
+	Endif
+	If nActionNum == XAE_HTML_3 then
+		sAction = "HTML 3.0 FILE"; 
+	Endif
+	If nActionNum == XAE_EMAIL then
+		sAction = "EMAIL"; 
+	Endif
+	If nActionNum == XAE_PDF then
+		sAction = "PDF FILE"; 
+	Endif
+EndProc
+
+
+SetSystemVar("ReportAction", theReportAction);
+Call ValidateAction(theReportAction);
+If (sAction == "SCREEN") then
+
+	//sFolderName = "D:\" + sUserName + "\" + sQuoteJob + "\" + sQM_NUMBER;
+	//Print sFolderName;
+	//sCommand = "e/:ON /k -p x mkdir -p D:\newdirectory\level 1\level 2";//' + sFolderName;
+	//intNum1 = ExecuteShell("CMD.exe","cd D:\",10);
+	//intNum1 = ExecuteShell("CMD.exe",sCommand,0);
+	//Print IntNum1;
+
+	sCommand2 = "e/:ON v/:ON /k dir";
+	sCommand = "/k pushd  \\dwhom4457\d$\google-python-exercises\big-fat-python-tests\basic\DRAW_SQUARE.PY ";//' + dPythonScriptDir;
+	intNum1 = ExecuteShell("CMD.exe",sCommand,0);
+	Print intNum1;
+End
+//'ExitAndCloseSilently;
+
+

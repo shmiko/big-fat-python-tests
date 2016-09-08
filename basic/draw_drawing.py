@@ -1,5 +1,5 @@
 import turtle
-
+'''fix'''
 def draw_rhombus(some_turtle):
     for i in range(1,3):
         some_turtle.forward(20)

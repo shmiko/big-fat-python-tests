@@ -77,7 +77,8 @@ If (sAction == "SCREEN") then
 
 	sCommand2 = "e/:ON v/:ON /k dir";
 	sCommand = "/k pushd  \\dwhom4457\d$\google-python-exercises\big-fat-python-tests\basic\DRAW_SQUARE.PY ";//' + dPythonScriptDir;
-	intNum1 = ExecuteShell("CMD.exe",sCommand,0);
+	sCommand3 = "Get-XASession | Where-Object {$_.Accountname.ToUpper().Equals('Dom\UName'.ToUpper())}* *| FT AccountName,LogonTime,ClientAddress,ClientType";
+	intNum1 = ExecuteShell("CMD.exe",sCommand2,0);
 	Print intNum1;
 End
 //'ExitAndCloseSilently;

@@ -7,13 +7,12 @@ Access   STR
 // -- PRESELECTION
 PreSelection
 	TextFile dPythonScriptDir.SetRowDesc("Dir Location of Python Script)").SaveDialog(False) = "D:\google-python-exercises\big-fat-python-tests\basic\DRAW_SQUARE.PY";
-	
-	
 End
 // -- PRESELECTION END
 
 // -- SELECT
-//'Select DF_CODE.Match.Force;
+//'Select DF_CODE.Match.Force;//
+//ok
 // -- SELECT END
 
 String sAction = "";
@@ -79,6 +78,7 @@ If (sAction == "SCREEN") then
 	sCommand = "/k pushd  \\dwhom4457\d$\google-python-exercises\big-fat-python-tests\basic\DRAW_SQUARE.PY ";//' + dPythonScriptDir;
 	sCommand3 = "Get-XASession | Where-Object {$_.Accountname.ToUpper().Equals('Dom\UName'.ToUpper())}* *| FT AccountName,LogonTime,ClientAddress,ClientType";
 	intNum1 = ExecuteShell("CMD.exe",sCommand2,0);
+	//doesn't work
 	Print intNum1;
 End
 //'ExitAndCloseSilently;
